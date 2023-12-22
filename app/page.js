@@ -1,4 +1,4 @@
-import { bodyFont, titleFont } from "@/lib/font";
+import Button from "@/components/button";
 
 export const metadata = {
   title: "Create Next App",
@@ -8,9 +8,9 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <div className={`${titleFont.className}`}>deneme</div>
-      <div className={`${bodyFont.className}`}>deneme</div>
-      <div>deneme2</div>
+      <Button disabled type={"secondary"}>
+        Guney Unay
+      </Button>
     </>
   );
 }

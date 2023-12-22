@@ -1,0 +1,39 @@
+.primaryButton {
+  display: inline-flex;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  font-family: PublicSans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: #203a4c;
+  cursor: pointer;
+}
+
+.primaryButton:hover {
+  background: #5fb4a2;
+}
+
+.secondaryButton {
+  background-color: white;
+  padding: 17px 32px;
+  color: #33323d;
+  font-family: PublicSans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid #33323d;
+}
+
+.secondaryButton:hover {
+  color: #fafafa;
+  background: #33323d;
+}
