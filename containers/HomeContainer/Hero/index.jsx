@@ -32,7 +32,6 @@ function Hero() {
             className="hidden  lg:block"
           />
         </div>
-
         <div className="mt-8 md:absolute bottom-0 left-0 md:bg-white md:w-[514px] lg:w-[445px] md:pt-14 md:pr-14 lg:pr-[55px]">
           <div className="flex flex-col gap-8 md:gap-12">
             <h1 className="heading-l">
