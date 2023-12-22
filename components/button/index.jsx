@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./styles.module.css"; // veya istediğin CSS modül dosyasının yolunu belirt
 
-const PrimaryButton = ({ children }) => {
+const PrimaryButton = ({ children, className }) => {
   return (
     <button
-      className={`${styles.primaryButton} group disabled:bg-[#203a4c]`}
+      className={`${styles.primaryButton} group disabled:bg-[#203a4c] ${className}`}
       disabled
     >
       <div className="w-12 h-12">
@@ -41,15 +41,19 @@ const PrimaryButton = ({ children }) => {
   );
 };
 
-const SecondaryButton = ({ children }) => {
-  return <button className={styles.secondaryButton}>{children}</button>;
+const SecondaryButton = ({ children, className }) => {
+  return (
+    <button className={`${styles.secondaryButton} ${className}`}>
+      {children}
+    </button>
+  );
 };
 
-const Button = ({ children, type }) => {
+const Button = ({ children, type, className }) => {
   if (type === "primary") {
-    return <PrimaryButton>{children}</PrimaryButton>;
+    return <PrimaryButton className={className}>{children}</PrimaryButton>;
   } else if (type === "secondary") {
-    return <SecondaryButton>{children}</SecondaryButton>;
+    return <SecondaryButton className={className}>{children}</SecondaryButton>;
   } else {
     return null;
   }

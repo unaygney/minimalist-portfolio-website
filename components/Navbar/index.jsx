@@ -40,7 +40,7 @@ function Navbar({ activePage }) {
           {/* Nav links for mobile */}
           <nav
             className={clsx(
-              "absolute w-[223px] bg-[#33323D]  top-[78px] right-0  text-white  ",
+              "absolute w-[223px] bg-[#33323D]  top-[78px] right-0  text-white  z-10 ",
               { block: isOpen },
               { hidden: !isOpen }
             )}
