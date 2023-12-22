@@ -8,7 +8,7 @@ import clsx from "clsx";
 
 function Card({ onLeft }) {
   return (
-    <section className="px-8 ">
+    <section className="px-8 md:px-0 ">
       <div className="flex flex-col md:flex-row gap-8 md:gap-[69px] lg:gap-[125px] ">
         <div
           className={clsx(

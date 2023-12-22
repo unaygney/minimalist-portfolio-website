@@ -4,31 +4,14 @@ import { Squash as Hamburger } from "hamburger-react";
 import Link from "next/link";
 import Logo from "./logo.svg";
 import clsx from "clsx";
-
-const links = [
-  {
-    id: 0,
-    title: "Home",
-    path: "/",
-  },
-  {
-    id: 1,
-    title: "Portfolio",
-    path: "/portfolio",
-  },
-  {
-    id: 2,
-    title: "Contact Me",
-    path: "/contactme",
-  },
-];
+import { LINKS } from "./constant";
 
 function Navbar({ activePage }) {
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <header className=" my-8 md:my-16">
-      <div className="flex justify-between items-center px-8 ">
+    <header className=" my-8 md:my-16 container mx-auto">
+      <div className="flex justify-between items-center px-8 md:px-0 ">
         <Link href={"/"}>
           <Logo />
         </Link>
@@ -46,7 +29,7 @@ function Navbar({ activePage }) {
             )}
           >
             <div className="flex flex-col text-center gap-8 py-10">
-              {links.map((link) => (
+              {LINKS.map((link) => (
                 <Link
                   className="text-white text-xs font-normal leading-normal tracking-[2px] uppercase"
                   key={link.id}
@@ -62,7 +45,7 @@ function Navbar({ activePage }) {
         {/* Nav links for tablet and desktop */}
         <nav className="hidden md:block">
           <div className="flex gap-[42px]  ">
-            {links.map((link) => (
+            {LINKS.map((link) => (
               <Link
                 key={link.id}
                 href={link.path}

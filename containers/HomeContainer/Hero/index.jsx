@@ -7,7 +7,7 @@ import Button from "@/components/button";
 
 function Hero() {
   return (
-    <section className="px-8 mb-24 lg:mb-[150px] ">
+    <section className="px-8 md:px-0 mb-24 lg:mb-[150px] ">
       <div className="relative">
         <div className="relative w-full h-[271px] md:h-[600px]">
           <Image
