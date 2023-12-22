@@ -25,7 +25,7 @@ function Footer() {
           </nav>
         </div>
 
-        <div className="ml-auto">
+        <div className="md:ml-auto">
           <SocialLink />
         </div>
       </div>
