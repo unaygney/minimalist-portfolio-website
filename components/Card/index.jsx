@@ -5,12 +5,12 @@ import clsx from "clsx";
 
 function Card({ info, onLeft }) {
   return (
-    <section className="px-8 md:px-0 headline ">
+    <section className="px-8 md:px-0  ">
       <div className="flex flex-col md:flex-row gap-8 md:gap-[69px] lg:gap-[125px] ">
         <div
           className={clsx(
-            "w-full md:w-[281px] h-[346px] md:h-[600px] lg:w-[540px]  relative ",
-            { "order-2": onLeft }
+            "w-full  h-[346px] md:h-[600px] lg:w-[540px] sm:order-1  relative ",
+            { "md:order-2": onLeft }
           )}
         >
           <Image
@@ -34,8 +34,8 @@ function Card({ info, onLeft }) {
         </div>
         <div
           className={clsx(
-            "flex flex-col gap-6 border-t border-b border-[#33323D] border-opacity-15 py-8 md:flex-1 lg:max-w-[350px]",
-            { "order-1": onLeft }
+            "flex flex-col gap-6 border-t border-b border-[#33323D] border-opacity-15 py-8 md:flex-1 lg:max-w-[350px] sm:order-2 md:justify-center",
+            { "md:order-1": onLeft }
           )}
         >
           <h3 className="mt-1 heading-l">{info.title}</h3>
