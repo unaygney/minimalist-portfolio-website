@@ -1,12 +1,9 @@
 import React from "react";
-import example from "@/containers/HomeContainer/Images/mobile/image-homepage-profile.jpg";
-import example2 from "@/containers/HomeContainer/Images/tablet/image-homepage-profile.jpg";
-import example3 from "@/containers/HomeContainer/Images/desktop/image-homepage-profile.jpg";
 import Image from "next/image";
 import Button from "../button";
 import clsx from "clsx";
 
-function Card({ onLeft }) {
+function Card({ info, onLeft }) {
   return (
     <section className="px-8 md:px-0 headline ">
       <div className="flex flex-col md:flex-row gap-8 md:gap-[69px] lg:gap-[125px] ">
@@ -16,15 +13,20 @@ function Card({ onLeft }) {
             { "order-2": onLeft }
           )}
         >
-          <Image src={example} alt="example" fill className="md:hidden" />
           <Image
-            src={example2}
+            src={info.images.mobile}
+            alt="example"
+            fill
+            className="md:hidden"
+          />
+          <Image
+            src={info.images.tablet}
             alt="example"
             fill
             className="hidden md:block"
           />
           <Image
-            src={example3}
+            src={info.images.desktop}
             alt="example"
             fill
             className="hidden lg:block"
@@ -36,19 +38,10 @@ function Card({ onLeft }) {
             { "order-1": onLeft }
           )}
         >
-          <h3 className="mt-1 heading-l">About Me</h3>
-          <p className="body-text-1 opacity-80">
-            I’m a junior front-end developer looking for a new role in an
-            exciting company. I focus on writing accessible HTML, using modern
-            CSS practices and writing clean JavaScript. When writing JavaScript
-            code, I mostly use React, but I can adapt to whatever tools are
-            required. I’m based in London, UK, but I’m happy working remotely
-            and have experience in remote teams. When I’m not coding, you’ll
-            find me outdoors. I love being out in nature whether that’s going
-            for a walk, run or cycling. I’d love you to check out my work.
-          </p>
+          <h3 className="mt-1 heading-l">{info.title}</h3>
+          <p className="body-text-1 opacity-80">{info.content}</p>
           <Button className={"w-[202px]"} type={"secondary"}>
-            Go To Portfolio
+            {info.buttonTitle}
           </Button>
         </div>
       </div>
