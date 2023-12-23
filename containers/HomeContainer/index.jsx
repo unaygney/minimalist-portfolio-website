@@ -6,7 +6,7 @@ import { CARD_INFO } from "./constant";
 
 function HomeContainer() {
   return (
-    <main className="container mx-auto ">
+    <main className="container mx-auto animate__animated animate__fadeIn ">
       <Hero />
       <Card info={CARD_INFO} />
       <InterestCard />
