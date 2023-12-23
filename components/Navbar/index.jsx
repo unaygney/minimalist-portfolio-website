@@ -34,6 +34,7 @@ function Navbar({ activePage }) {
                   className="text-white text-xs font-normal leading-normal tracking-[2px] uppercase"
                   key={link.id}
                   href={link.path}
+                  onClick={() => setOpen(false)}
                 >
                   {link.title}
                 </Link>
