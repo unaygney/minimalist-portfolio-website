@@ -5,9 +5,9 @@ import { PROJECTS } from "./constant";
 
 function DetailContainer({ id }) {
   const filteredData = PROJECTS.find((project) => project.name === id);
-  console.log(filteredData);
+
   return (
-    <main className="container mx-auto px-8 md:px-0">
+    <main className="container mx-auto px-8 md:px-0 animate__animated animate__fadeIn ">
       <HeroImage images={filteredData.heroImg} />
       <InterestCard />
     </main>
