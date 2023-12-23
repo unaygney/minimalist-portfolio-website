@@ -1,6 +1,7 @@
 "use client";
 import { titleFont, bodyFont } from "@/lib/font";
 import "./globals.css";
+import "animate.css";
 import { usePathname } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
