@@ -15,21 +15,24 @@ function Card({ info, onLeft }) {
         >
           <Image
             src={info.images.mobile}
-            alt="example"
+            alt={`${info.title} card images `}
             fill
             className="md:hidden"
+            placeholder="blur"
           />
           <Image
             src={info.images.tablet}
-            alt="example"
+            alt={`${info.title} card images `}
             fill
             className="hidden md:block"
+            placeholder="blur"
           />
           <Image
             src={info.images.desktop}
-            alt="example"
+            alt={`${info.title} card images `}
             fill
             className="hidden lg:block"
+            placeholder="blur"
           />
         </div>
         <div
