@@ -18,6 +18,7 @@ export const CARDS_INFO = [
   {
     id: 0,
     title: "Manage",
+    path: "/portfolio/manage",
     content:
       "This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.",
     buttonTitle: "View Project",
@@ -30,6 +31,7 @@ export const CARDS_INFO = [
   {
     id: 1,
     title: "Bookmark",
+    path: "/portfolio/bookmark",
     content:
       "This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the features section.",
     buttonTitle: "View Project",
@@ -42,6 +44,7 @@ export const CARDS_INFO = [
   {
     id: 2,
     title: "Insure",
+    path: "/portfolio/insure",
     content:
       "This was a small project which mostly consisted of HTML and CSS. I built a fully-responsive landing page. The only JavaScript this project required was to enable the toggling of the mobile navigation.",
     buttonTitle: "View Project",
@@ -54,6 +57,7 @@ export const CARDS_INFO = [
   {
     id: 3,
     title: "Fylo",
+    path: "/portfolio/fylo",
     content:
       "This project was built in pure HTML and CSS. I had mobile and desktop designs to work to and built it so that it was fully-responsive. I took a mobile-first approach and used modern CSS like Flexbox and Grid for layout purposes.",
     buttonTitle: "View Project",

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./styles.module.css"; // veya istediğin CSS modül dosyasının yolunu belirt
 
-const PrimaryButton = ({ children, className }) => {
+const PrimaryButton = ({ children, className, path }) => {
   return (
     <button
       className={`${styles.primaryButton} group disabled:bg-[#203a4c] ${className}`}

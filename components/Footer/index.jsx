@@ -6,7 +6,7 @@ import { LINKS } from "./constant";
 
 function Footer() {
   return (
-    <footer className="bg-[#33323D] py-14 md:py-6 text-white ">
+    <footer className="bg-[#33323D] py-14 md:py-6 text-white mt-auto ">
       <div className="flex flex-col gap-10 items-center md:flex-row container mx-auto ">
         <div className="flex flex-col md:flex-row gap-10 md:gap-12 l">
           <Link className="inline-flex justify-center" href={"/"}>

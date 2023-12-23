@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Button from "../button";
 import clsx from "clsx";
-
+import Link from "next/link";
 function Card({ info, onLeft }) {
   return (
     <section className="px-8 md:px-0  ">
@@ -44,7 +44,11 @@ function Card({ info, onLeft }) {
           <h3 className="mt-1 heading-l">{info.title}</h3>
           <p className="body-text-1 opacity-80">{info.content}</p>
           <Button className={"w-[202px]"} type={"secondary"}>
-            {info.buttonTitle}
+            {info.path ? (
+              <Link href={info.path}>{info.buttonTitle}</Link>
+            ) : (
+              <span>{info.buttonTitle}</span>
+            )}
           </Button>
         </div>
       </div>
