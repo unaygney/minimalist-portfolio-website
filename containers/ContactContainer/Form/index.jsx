@@ -46,7 +46,9 @@ function Form() {
                   {...formik.getFieldProps("name")}
                 />
                 {formik.touched.name && formik.errors.name ? (
-                  <div>{formik.errors.name}</div>
+                  <div className="text-[#f43030] text-[10px] italic font-bold leading-normal">
+                    {formik.errors.name}
+                  </div>
                 ) : null}
               </div>
 
@@ -73,7 +75,9 @@ function Form() {
                   {...formik.getFieldProps("email")}
                 />
                 {formik.touched.email && formik.errors.email ? (
-                  <div>{formik.errors.email}</div>
+                  <div className="text-[#f43030] text-[10px] italic font-bold leading-normal">
+                    {formik.errors.email}
+                  </div>
                 ) : null}
               </div>
 
@@ -100,7 +104,9 @@ function Form() {
                   {...formik.getFieldProps("message")}
                 />
                 {formik.touched.message && formik.errors.message ? (
-                  <div>{formik.errors.message}</div>
+                  <div className="text-[#f43030] text-[10px] italic font-bold leading-normal">
+                    {formik.errors.message}
+                  </div>
                 ) : null}
               </div>
 
