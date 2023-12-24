@@ -15,11 +15,32 @@ import HeroFyloTablet from "@/assets/images/detail/tablet/image-fylo-hero.jpg";
 import HeroFyloDesktop from "@/assets/images/detail/desktop/image-fylo-hero.jpg";
 
 import PrevManageMobile1 from "@/assets/images/detail/mobile/image-manage-preview-1.jpg";
-import PrevManageTablet1 from "@/assets/images/detail/mobile/image-manage-preview-1.jpg";
-import PrevManageDesktop1 from "@/assets/images/detail/mobile/image-manage-preview-1.jpg";
+import PrevManageTablet1 from "@/assets/images/detail/tablet/image-manage-preview-1.jpg";
+import PrevManageDesktop1 from "@/assets/images/detail/desktop/image-manage-preview-1.jpg";
 import PrevManageMobile2 from "@/assets/images/detail/mobile/image-manage-preview-2.jpg";
-import PrevManageTablet2 from "@/assets/images/detail/mobile/image-manage-preview-2.jpg";
-import PrevManageDesktop2 from "@/assets/images/detail/mobile/image-manage-preview-2.jpg";
+import PrevManageTablet2 from "@/assets/images/detail/tablet/image-manage-preview-2.jpg";
+import PrevManageDesktop2 from "@/assets/images/detail/desktop/image-manage-preview-2.jpg";
+
+import PrevBookmarkMobile1 from "@/assets/images/detail/mobile/image-bookmark-preview-1.jpg";
+import PrevBookmarkTablet1 from "@/assets/images/detail/tablet/image-bookmark-preview-1.jpg";
+import PrevBookmarkDesktop1 from "@/assets/images/detail/desktop/image-bookmark-preview-1.jpg";
+import PrevBookmarkMobile2 from "@/assets/images/detail/mobile/image-bookmark-preview-2.jpg";
+import PrevBookmarkTablet2 from "@/assets/images/detail/tablet/image-bookmark-preview-2.jpg";
+import PrevBookmarkDesktop2 from "@/assets/images/detail/desktop/image-bookmark-preview-2.jpg";
+
+import PrevInsureMobile1 from "@/assets/images/detail/mobile/image-insure-preview-1.jpg";
+import PrevInsureTablet1 from "@/assets/images/detail/tablet/image-insure-preview-1.jpg";
+import PrevInsureDesktop1 from "@/assets/images/detail/desktop/image-insure-preview-1.jpg";
+import PrevInsureMobile2 from "@/assets/images/detail/mobile/image-insure-preview-2.jpg";
+import PrevInsureTablet2 from "@/assets/images/detail/tablet/image-insure-preview-2.jpg";
+import PrevInsureDesktop2 from "@/assets/images/detail/desktop/image-insure-preview-2.jpg";
+
+import PrevFyloMobile1 from "@/assets/images/detail/mobile/image-fylo-preview-1.jpg";
+import PrevFyloTablet1 from "@/assets/images/detail/tablet/image-fylo-preview-1.jpg";
+import PrevFyloDesktop1 from "@/assets/images/detail/desktop/image-fylo-preview-1.jpg";
+import PrevFyloMobile2 from "@/assets/images/detail/mobile/image-fylo-preview-2.jpg";
+import PrevFyloTablet2 from "@/assets/images/detail/tablet/image-fylo-preview-2.jpg";
+import PrevFyloDesktop2 from "@/assets/images/detail/desktop/image-fylo-preview-2.jpg";
 
 export const PROJECTS = [
   {
@@ -59,6 +80,16 @@ export const PROJECTS = [
       tablet: HeroBookmarkTablet,
       desktop: HeroBookmarkDesktop,
     },
+    previewsImg1: {
+      mobile: PrevBookmarkMobile1,
+      tablet: PrevBookmarkTablet1,
+      desktop: PrevBookmarkDesktop1,
+    },
+    previewsImg2: {
+      mobile: PrevBookmarkMobile2,
+      tablet: PrevBookmarkTablet2,
+      desktop: PrevBookmarkDesktop2,
+    },
   },
   {
     id: 2,
@@ -73,6 +104,16 @@ export const PROJECTS = [
       tablet: HeroInsureTablet,
       desktop: HeroInsureDesktop,
     },
+    previewsImg1: {
+      mobile: PrevInsureMobile1,
+      tablet: PrevInsureTablet1,
+      desktop: PrevInsureDesktop1,
+    },
+    previewsImg2: {
+      mobile: PrevInsureMobile2,
+      tablet: PrevInsureTablet2,
+      desktop: PrevInsureDesktop2,
+    },
   },
   {
     id: 3,
@@ -86,6 +127,16 @@ export const PROJECTS = [
       mobile: HeroFyloMobile,
       tablet: HeroFyloTablet,
       desktop: HeroFyloDesktop,
+    },
+    previewsImg1: {
+      mobile: PrevFyloMobile1,
+      tablet: PrevFyloTablet1,
+      desktop: PrevFyloDesktop1,
+    },
+    previewsImg2: {
+      mobile: PrevFyloMobile2,
+      tablet: PrevFyloTablet2,
+      desktop: PrevFyloDesktop2,
     },
   },
 ];
