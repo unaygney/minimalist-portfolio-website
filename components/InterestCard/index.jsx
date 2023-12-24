@@ -8,7 +8,7 @@ function InterestCard() {
         Interested in doing a project together?
       </h3>
       <span className="hidden md:block w-full bg-[#33323D] bg-opacity-15 h-[1px] "></span>
-      <Button className={"w-[162px] md:w-[250px]"} type={"secondary"}>
+      <Button className={"w-[162px] md:w-[250px] "} type={"secondary"}>
         Contact Me
       </Button>
     </section>

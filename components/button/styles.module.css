@@ -20,7 +20,10 @@
 
 .secondaryButton {
   background-color: white;
-  padding: 17px 32px;
+  display: inline-flex;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
   color: #33323d;
   font-family: PublicSans;
   font-size: 12px;
